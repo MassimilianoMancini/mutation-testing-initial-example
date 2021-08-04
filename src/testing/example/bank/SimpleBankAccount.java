@@ -1,0 +1,24 @@
+package testing.example.bank;
+
+public class SimpleBankAccount {
+
+	private double balance;
+
+	public SimpleBankAccount(double balance) {
+		this.balance = balance;
+	}
+
+	public SimpleBankAccount() {
+	}
+
+	public void deposit(double amount) {
+		if (amount <= 0) {
+			throw new IllegalArgumentException("Not positive: " + amount);
+		}
+		this.balance += amount;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+}

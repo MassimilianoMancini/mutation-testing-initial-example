@@ -1,0 +1,1 @@
+Mutation testing with PIT and Pitclipse
